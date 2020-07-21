@@ -2,7 +2,7 @@
 The DS3231 is a low-cost, extremely accurate (+/- 2ppm) I2C
 real-time clock (RTC) with an integrated temperature-compensated crystal oscillator (TCXO) and crystal. This library is an extension of [this](http://rinkydinkelectronics.com/library.php?id=73) well-written library. The library lacked Alarm functionalities and some easy-to-use wrappers. Therefore, this is another flavor of that existent library. Refer to the datasheet for detailed explanation of the [DS3231](https://datasheets.maximintegrated.com/en/ds/DS3231.pdf) chip. 
 
-![DS3231 Module](\Documentation\DS3231.png)
+![DS3231 Module](\Documentation\DS3231.png?raw=true "Title")
 
 ***
 ## Functions
