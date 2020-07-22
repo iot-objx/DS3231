@@ -132,7 +132,7 @@ class DS3231
 		uint8_t _sda_pin;
 		uint8_t _burstArray[7];
 		boolean	_use_hw;
-		uint16_t YEAR0; // 1970 or 2000 or user defined
+		uint16_t YEAR0 = 1970; // 1970 or 2000 or user defined
 
 		void	_sendStart(byte addr);
 		void	_sendStop();

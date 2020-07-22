@@ -329,7 +329,7 @@ char *DS3231::getDateStr(uint8_t slformat, uint8_t eformat, char divider)
 			output[5]=divider;
 			if (slformat==FORMAT_SHORT)
 			{
-				yr=t.year-2000;
+				yr=t.year-YEAR0;
 				if (yr<10)
 					output[6]=48;
 				else
@@ -354,7 +354,7 @@ char *DS3231::getDateStr(uint8_t slformat, uint8_t eformat, char divider)
 				offset=2;
 			if (slformat==FORMAT_SHORT)
 			{
-				yr=t.year-2000;
+				yr=t.year-YEAR0;
 				if (yr<10)
 					output[0]=48;
 				else
@@ -399,7 +399,7 @@ char *DS3231::getDateStr(uint8_t slformat, uint8_t eformat, char divider)
 			output[5]=divider;
 			if (slformat==FORMAT_SHORT)
 			{
-				yr=t.year-2000;
+				yr=t.year-YEAR0;
 				if (yr<10)
 					output[6]=48;
 				else
