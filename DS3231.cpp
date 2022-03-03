@@ -258,6 +258,7 @@ void DS3231::setAlarm(ALARM_TYPES_t alarmType, uint8_t sec, uint8_t min, uint8_t
 }
 
 // Returns the alarm number (if any) and resets the alarm flag bit.
+// Therefore, 0 = no alarm, 1 = Alarm 1, 2 = Alarm 2, and 3 = Both Alarms.
 uint8_t DS3231::checkAlarm(void) {
 	uint8_t _reg = _readRegister(REG_STATUS); 
 	uint8_t _creg = _readRegister(REG_CON) & _reg; 

@@ -61,7 +61,13 @@ By default, the DS3231 chip has two hardware alarms. These alarms can also be us
 
     When setting Alarm 2, the seconds value must be supplied but is ignored, recommend using zero. This is because Alarm 2 has no seconds register.
 
-* **`checkAlarm()`**: returns the alarm number (if any) and resets the alarm flag bit.
+* **`checkAlarm()`**: returns the alarm number (if any) and resets the alarm flag bit. This function should be serviced frequent enough such that recurring alarms are not missed e.g. Interrupts. The alarm numbers are
+    | Alarm Number 	| Significance 
+    |:------------: | :-------------
+    |	0			| No Alarms
+    |	1			| Alarm 1
+    |	2			| Alarm 2
+    |	3			| Alarm 1 & 2
 
 ***
 ### Output
